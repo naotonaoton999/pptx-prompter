@@ -3,21 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="alternate" hreflang="ja" href="privacy.html">
+  <link rel="alternate" hreflang="en" href="en/privacy.html">
   <title>プライバシーポリシー — PPTX Prompter</title>
   <style>
     :root { color-scheme: light dark; --accent:#5567ff; --border:rgba(127,127,127,.2); }
     *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Sans","Yu Gothic UI",sans-serif;line-height:1.75}
     main{max-width:820px;margin:0 auto;padding:56px 24px 80px} h1{font-size:2.4rem;letter-spacing:-.03em} h2{margin-top:34px} a{color:var(--accent);text-decoration:none;font-weight:600} a:hover{text-decoration:underline}
     footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--border);font-size:.92rem;opacity:.8}
+  
+    .language-switch{display:flex;justify-content:flex-end;align-items:center;gap:10px;font-size:.9rem;margin-bottom:6px}
+    .language-switch a,.language-switch span{display:inline-block;padding:5px 11px;border:1px solid var(--border);border-radius:999px}
+    .language-switch [aria-current="page"]{font-weight:700;background:var(--card,rgba(127,127,127,.08));color:inherit}
   </style>
 </head>
 <body>
 <main>
+  <nav class="language-switch" aria-label="言語の選択"><span aria-current="page">日本語</span><a href="en/privacy.html" lang="en" hreflang="en">English</a></nav>
   <p><a href="index.html">← PPTX Prompter</a></p>
   <h1>プライバシーポリシー</h1>
   <p><strong>制定日：2026年10月</strong></p>
 
-  <p>PPTX Prompterは、個人情報その他のユーザーデータを収集、保存、送信しません。</p>
+  <p>PPTX Prompterは、ユーザーの個人情報やプレゼンテーションの内容を開発者のサーバーへ収集・送信しません。文字サイズ、行間、余白などの表示設定は、ユーザーのMac内に保存されます。</p>
 
   <h2>ローカルで処理する情報</h2>
   <p>ユーザーが選択したPPTXファイル、およびMicrosoft PowerPointから取得するプレゼンテーション情報は、PPTX Prompterの機能を提供するためにユーザーのMac上でのみ処理されます。これらの情報が開発者または第三者のサーバへ送信されることはありません。</p>
