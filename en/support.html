@@ -57,6 +57,24 @@
   </ul>
   <p>Font size is limited to 36–88 pt. Changes also appear in the main settings window and are saved. These shortcuts are inactive when the prompter is hidden. Use <code>Command + Option + P</code> to hide or restore the prompter.</p>
 
+  <h2>Automatic scrolling (Version 1.2 and later)</h2>
+  <p>While the prompter is visible, press <code>Control + Option + Command + S</code> to start, pause, or resume automatic scrolling. Choose from five speeds (8, 16, 24, 40, or 64 pt/second).</p>
+  <ul>
+    <li>Enable “Start auto-scroll on slide change” to begin scrolling from the top of the new notes whenever you move to a different slide, forward or backward. This option is off by default.</li>
+    <li>Short notes may not need scrolling. Scrolling stops naturally when the end of the notes is reached.</li>
+    <li>Using the mouse wheel or trackpad to scroll manually stops auto-scroll.</li>
+  </ul>
+
+  <h2>Reading Guide (Version 1.2 and later)</h2>
+  <p>The Reading Guide highlights the current reading position. In the control panel, choose the line, sentence, or paragraph mode. The guide is off by default.</p>
+  <ul>
+    <li><strong>Turn on/off:</strong> <code>Control + Option + Command + R</code></li>
+    <li><strong>Next line, sentence, or paragraph:</strong> <code>Control + Option + Command + Right Arrow</code></li>
+    <li><strong>Previous line, sentence, or paragraph:</strong> <code>Control + Option + Command + Left Arrow</code></li>
+  </ul>
+  <p>The previous/next shortcuts work only while the prompter is visible and the Reading Guide is enabled. When used with automatic scrolling, the highlight follows the approximate reading position, and you can jump forward or backward without stopping auto-scroll. After auto-scroll stops naturally at the end, moving the guide backward can allow scrolling to resume. Moving the guide does not automatically resume scrolling if you explicitly paused it or stopped it with manual scrolling.</p>
+  <p>Automatic following is estimated from the scroll position; it does not use speech recognition.</p>
+
   <h2>Automation permission</h2>
   <p>PPTX Prompter needs macOS Automation permission to read the current PowerPoint slide position. If you denied access, go to System Settings → Privacy &amp; Security → Automation and allow PPTX Prompter to access Microsoft PowerPoint.</p>
 
