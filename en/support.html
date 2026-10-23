@@ -61,8 +61,15 @@
   <p>While the prompter is visible, press <code>Control + Option + Command + S</code> to start, pause, or resume automatic scrolling. Choose from five speeds (8, 16, 24, 40, or 64 pt/second).</p>
   <ul>
     <li>Enable “Start auto-scroll on slide change” to begin scrolling from the top of the new notes whenever you move to a different slide, forward or backward. This option is off by default.</li>
-    <li>Short notes may not need scrolling. Scrolling stops naturally when the end of the notes is reached.</li>
+    <li>With the Reading Guide off, very short notes may have no room to scroll. With the guide on, extra display space allows even short notes to follow through the final passage. Auto-scroll stops naturally at the end.</li>
     <li>Using the mouse wheel or trackpad to scroll manually stops auto-scroll.</li>
+  </ul>
+  <h3>Version 1.3: Auto-start when showing the prompter</h3>
+  <ul>
+    <li>Turn on both “Start auto-scroll on slide change” and “Start auto-scroll when showing the prompter” to start from the beginning of the current slide's notes when first showing the prompter during a slide show. Both options are off by default.</li>
+    <li>If you temporarily hide the prompter while auto-scroll is running, showing it again can resume from the same highlight and scroll position when both options are enabled.</li>
+    <li>Manually pausing or scrolling takes priority: hiding and reopening alone will not restart auto-scroll. Explicitly switching the second option off and back on before showing the prompter is treated as a new start request.</li>
+    <li>Press <code>Control + Option + Command + S</code> to resume at the same visible position after a simple pause without guide navigation. When scrolling naturally finishes at the end, merely reopening the prompter does not restart it.</li>
   </ul>
 
   <h2>Reading Guide (Version 1.2 and later)</h2>
@@ -74,6 +81,15 @@
   </ul>
   <p>The previous/next shortcuts work only while the prompter is visible and the Reading Guide is enabled. When used with automatic scrolling, the highlight follows the approximate reading position, and you can jump forward or backward without stopping auto-scroll. After auto-scroll stops naturally at the end, moving the guide backward can allow scrolling to resume. Moving the guide does not automatically resume scrolling if you explicitly paused it or stopped it with manual scrolling.</p>
   <p>Automatic following is estimated from the scroll position; it does not use speech recognition.</p>
+
+  <h3>Version 1.3: Highlight colors, Focus Mode, and reading position</h3>
+  <ul>
+    <li><strong>Highlight color:</strong> Choose Blue, Green, or Yellow. Yellow highlights use black text for improved contrast.</li>
+    <li><strong>Focus:</strong> Choose Off, Weak, or Strong. When the Reading Guide is on, this dims text outside the highlighted passage.</li>
+    <li><strong>Reading position:</strong> Choose Near Top, 30%, or 45%. The percentages are approximate positions in the prompter viewport; reading still starts from the first passage.</li>
+    <li>Moving manually to the previous or next passage scrolls the chosen text toward your reading position when needed. Guide navigation can also continue while auto-scroll is running.</li>
+    <li>When you change slides, the Reading Guide starts from the beginning of the new slide's notes.</li>
+  </ul>
 
   <h2>Automation permission</h2>
   <p>PPTX Prompter needs macOS Automation permission to read the current PowerPoint slide position. If you denied access, go to System Settings → Privacy &amp; Security → Automation and allow PPTX Prompter to access Microsoft PowerPoint.</p>
